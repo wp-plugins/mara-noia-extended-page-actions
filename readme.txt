@@ -1,6 +1,6 @@
 === Mara Noia Extended Page Actions ===
 Contributors: maranoia
-Tags: page, edit, administartion, productivity
+Tags: page, edit, administration, productivity
 Donate link: none
 Requires at least: 3.0.1
 Tested up to: 4.1.1
