@@ -35,7 +35,7 @@ none
 
 == Changelog ==
 
-= 1.6 =
+= 1.7 =
 * First release to the public.
 
 == Upgrade Notice ==
