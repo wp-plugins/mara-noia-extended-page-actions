@@ -86,6 +86,29 @@ class MaraNoia_page_sibling_list_walker extends Walker_page {
     }
 }
 
+function pre_select_parent() 
+{
+    // Check if adding new page 
+    if( !isset($_GET['post_type']) || 'page' != $_GET['post_type'] ) 
+        return;
+
+    // Check for pre-selected parent
+    if( !isset($_GET['parent_id']) || empty( $_GET['parent_id'] ) ) 
+        return;
+
+    // There is a pre-selected value for the correct post_type, proceed with script
+    $the_id = $_GET['parent_id'];
+    ?>
+        <script type="text/javascript">
+        jQuery(document).ready( function($) 
+        {
+            $('#parent_id').val(<?php echo $the_id; ?>);
+        });
+        </script>
+    <?php
+}
+
+add_action( 'admin_head-post-new.php', 'pre_select_parent' );
 add_action( 'post_submitbox_misc_actions', 'create_sibling_child_buttons' );
 add_action( 'post_submitbox_misc_actions', 'list_siblings' );
 
