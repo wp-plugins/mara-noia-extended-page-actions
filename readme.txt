@@ -1,6 +1,6 @@
 === Mara Noia Extended Page Actions ===
 Contributors: maranoia
-Tags: page, edit, administration, productivity
+Tags: page, edit, administration, productivity, admin, pages, automatic
 Donate link: none
 Requires at least: 3.0.1
 Tested up to: 4.1.1
@@ -21,12 +21,11 @@ Further more you get a list of siblings of the current page, to make it fast to 
 
 This section describes how to install the plugin and get it working.
 
-
 1. Upload `maranoia.extended.page.actions.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
-none
+none so far
 
 == Screenshots ==
 
